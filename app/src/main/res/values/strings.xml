@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">QuickStartApp</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Crash Sample for Mobile Center</string>
+    <string name="crash_label_text">Last Crash Log :</string>
+    <string name="crash_no_crashes_yet">No Crashes Yet</string>
+    <string name="generated_error_button">Generated Error</string>
+    <string name="null_pointer_error_button">Null Pointer Error</string>
+    <string name="array_index_error_button">Index out of bounds Error</string>
+    <string name="divide_by_zero_error_button">Divide by Zero Error</string>
+    <string name="instruction">Generate Error and start the App again to see the crash logs</string>
 </resources>
