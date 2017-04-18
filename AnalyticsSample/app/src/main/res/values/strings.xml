@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Analytics Sample</string>
+    <string name="title_home">Simple</string>
+    <string name="title_second_screen">Medium</string>
+    <string name="title_third_screen">Complicated</string>
+    <string name="home_welcome">This is the home screen. Switch between screens, press buttons and see a new \"Home button pushed\" event registered at Mobile Center page</string>
+    <string name="second_welcome">This is the Second Screen. Please choose an item from a list and it will be sent as a parameter to your Mobile Center page</string>
+    <string name="third_welcome">This is the Third Screen. Fill the form and check the Analytics received data from it</string>
+    <string name="element_sent_to_analytics">Element %s was sent to Analytics</string>
+    <string name="push_me">Push me and track it</string>
+    <string name="your_name_here">Your name here</string>
+    <string name="your_age">Your age</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="fill_name">Please, fill your name</string>
+    <string name="survey_accepted">Your data has been accepted</string>
+</resources>
