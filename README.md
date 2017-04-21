@@ -16,4 +16,4 @@ public final static String APP_SECRET = "My App Secret";
   - Switch between the Screens and watch the events of opening a particular screen in [Mobile Center](https://mobile.azure.com/) 
   - On a first screen press a button  to register an event without parameters
   - On a second screen choose an item from a ListView to register an event with one parameter - you'll observe a result of your choice in an Analytics section of [Mobile Center](https://mobile.azure.com/) 
-  - On a third srcreen you may fill the survey and see it's results in Analytics as well as some extra useful events like "User canceled filling the survey" or "User tried to complete the survey with an empty name"
+  - On a third screen you may fill the survey and see it's results in Analytics as well as some extra useful events like "User canceled filling the survey" or "User tried to complete the survey with an empty name"
