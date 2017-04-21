@@ -1,11 +1,13 @@
 package com.akvelon.analyticssample;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
 import android.view.MenuItem;
 
 import com.microsoft.azure.mobile.MobileCenter;
@@ -18,7 +20,7 @@ public class MainActivity extends FragmentActivity {
 
 
     //This is your app's secret key you obtain from the mobile center
-    public final static String APP_SECRET = "99094070-d1bb-4c90-bc12-1b25c5fd6a5a";
+    public final static String APP_SECRET = null;
     private final int HOME = 0, SECOND = 1, THIRD =2 ;
     private FragmentManager fragmentManager;
 
@@ -47,6 +49,11 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (null == APP_SECRET) {
+            createNoAppSecretDialog();
+            return;
+        }
 
         MobileCenter.start(getApplication(), APP_SECRET,
                 Analytics.class);
@@ -82,4 +89,16 @@ public class MainActivity extends FragmentActivity {
         Analytics.trackEvent(Event.PAGE_OPENED, properties);
     }
 
+    private void createNoAppSecretDialog(){
+        AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
+        alertDialog.setTitle(getString(R.string.no_app_secret));
+        alertDialog.setMessage(getString(R.string.please_provide_app_secret));
+        alertDialog.setCancelable(false);
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, getString(android.R.string.ok),
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();                    }
+                });
+        alertDialog.show();
+    }
 }

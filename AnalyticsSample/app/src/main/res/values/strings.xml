@@ -14,4 +14,6 @@
     <string name="minus">-</string>
     <string name="fill_name">Please, fill your name</string>
     <string name="survey_accepted">Your data has been accepted</string>
+    <string name="no_app_secret">No App Secret</string>
+    <string name="please_provide_app_secret">In order this sample app to work please provide an app secret by modifying APP_SECRET Sring in MainActivity.java. Press OK to exit</string>
 </resources>

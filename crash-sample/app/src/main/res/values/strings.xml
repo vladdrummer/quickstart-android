@@ -7,4 +7,6 @@
     <string name="array_index_error_button">Index out of bounds Error</string>
     <string name="divide_by_zero_error_button">Divide by Zero Error</string>
     <string name="instruction">Generate Error and start the App again to see the crash logs</string>
+    <string name="no_app_secret">No App Secret</string>
+    <string name="please_provide_app_secret">In order this sample app to work please provide an app secret by modifying APP_SECRET Sring in MainActivity.java. Press OK to exit</string>
 </resources>
