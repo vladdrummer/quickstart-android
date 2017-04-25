@@ -1,4 +1,4 @@
-# Mobile Center - Quickstart App for iOS
+# Mobile Center - Quickstart App for Android
 This sample app will help you onboard to Mobile Center Build, Analytics and Crashes services within few minutes.
 
 # Steps:
